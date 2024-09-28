@@ -1,0 +1,21 @@
+version: '3.5'
+
+services:
+  app:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: technical-test
+    container_name: technical-test
+    environment:
+      - PORT=${PORT}
+      - API_VERSION=${API_VERSION}
+      - DATABASE_SELECTED=${DATABASE_SELECTED}
+      - MONGODB=${MONGODB}
+      - PAGINATION_DEFAULT_PAGE=${PAGINATION_DEFAULT_PAGE}
+      - PAGINATION_DEFAULT_LIMIT=${PAGINATION_DEFAULT_LIMIT}
+      - PAGINATION_DEFAULT_ORDER=${PAGINATION_DEFAULT_ORDER}
+    ports:
+      - "${PORT}:${PORT}"
+    volumes:
+      - ./src:/app/src
