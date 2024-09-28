@@ -37,6 +37,11 @@
     npm run start:dev
   ```
 
+4. Enlace adicional para ver el repositorio de la imagen de docker
+  ```
+  https://hub.docker.com/repository/docker/stylejuubi/technical-test/general
+  ```
+
 ```
   Nota: realice el desarrollo con MongoDB en ves de PostgreSQL ya que 
   realmente domino mas esta base de datos, deje el proyecto con un servicio 
